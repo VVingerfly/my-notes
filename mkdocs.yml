@@ -1,0 +1,72 @@
+# Project information
+site_name: My Notes
+site_description: 'My notes'
+site_author: 'Wei Li'
+site_url: 'https://github.com/VVingerfly'
+
+# Repository
+repo_name: 'VVingerfly/my-notes'
+repo_url: 'https://github.com/VVingerfly/my-notes'
+
+# Copyright
+copyright: 'Copyright &copy; 2020 Wei Li'
+
+nav:
+  - Home: index.md
+
+  - C++ Primer:
+    - ToC: ./cpp-primer/toc.md
+    - ./cpp-primer/Chap02-变量.md
+    - ./cpp-primer/Chap03-字符串、向量和数组.md
+    - ./cpp-primer/Chap12-动态内存.md
+
+  - About: about.md
+
+
+# Configuration
+theme:
+  name: material  #https://squidfunk.github.io/mkdocs-material/
+  # name: 'readthedocs'
+  # name: 'mkdocs'
+  language: 'en'
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/VVingerfly'
+    - type: 'globe'
+      link: 'https://vvingerfly.github.io/'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+  # https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
